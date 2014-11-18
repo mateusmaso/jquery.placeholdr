@@ -15,11 +15,11 @@
   },
   "licenses": [{
     "type": "MIT",
-    "url": "https://github.com/mateusmaso/jquery.placeholder/blob/master/LICENSE.txt"
+    "url": "https://github.com/mateusmaso/jquery.placeholdr/blob/master/LICENSE.txt"
   }],
   "repository": {
     "type" : "git",
-    "url": "http://github.com/mateusmaso/jquery.placeholder"
+    "url": "http://github.com/mateusmaso/jquery.placeholdr"
   },
   "dependencies": {
     "jquery": "~2.1.0"
@@ -27,5 +27,5 @@
   "scripts": {
     "test": "grunt mocha"
   },
-  "main": "dist/jquery.placeholder.js"
+  "main": "dist/jquery.placeholdr.js"
 }

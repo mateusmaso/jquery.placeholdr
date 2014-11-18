@@ -1,4 +1,4 @@
-jquery.placeholder [![Build Status](https://travis-ci.org/mateusmaso/jquery.placeholder.svg?branch=master)](https://travis-ci.org/mateusmaso/jquery.placeholder)
+jquery.placeholdr [![Build Status](https://travis-ci.org/mateusmaso/jquery.placeholdr.svg?branch=master)](https://travis-ci.org/mateusmaso/jquery.placeholdr)
 ==================
 
 jQuery plugin for emulating placeholder.
@@ -14,7 +14,7 @@ jQuery plugin for emulating placeholder.
 ## Examples
 
 ```javascript
-$("input placeholder='Foo Bar'").placeholder();
+$("input placeholder='Foo Bar'").placeholdr();
 ```
 
 ## License

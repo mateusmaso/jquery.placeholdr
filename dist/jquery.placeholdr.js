@@ -1,11 +1,11 @@
-// jquery.placeholder
-// ------------------
+// jquery.placeholdr
+// -----------------
 // v0.1.0
 //
 // Copyright (c) 2013-2014 Mateus Maso
 // Distributed under MIT license
 //
-// http://github.com/mateusmaso/jquery.placeholder
+// http://github.com/mateusmaso/jquery.placeholdr
 
 (function(root, factory) {
 
