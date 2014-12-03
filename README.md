@@ -10,7 +10,7 @@ jQuery plugin for emulating placeholder on editable elements.
 
 ## Dependencies
 
-* jquery.js (>= 2.1)
+* jquery.js (>= 2.1.0)
 
 ## Examples
 
