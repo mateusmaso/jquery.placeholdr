@@ -1,11 +1,12 @@
 jquery.placeholdr [![Build Status](https://travis-ci.org/mateusmaso/jquery.placeholdr.svg?branch=master)](https://travis-ci.org/mateusmaso/jquery.placeholdr)
 ==================
 
-jQuery plugin for emulating placeholder.
+jQuery plugin for emulating placeholder on editable elements.
 
 ## Features
 
 * Emulate placeholders.
+* Textarea, input and contenteditable support.
 
 ## Dependencies
 

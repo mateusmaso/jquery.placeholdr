@@ -1,6 +1,6 @@
 // jquery.placeholdr
 // -----------------
-// v0.1.0
+// v0.1.2
 //
 // Copyright (c) 2013-2014 Mateus Maso
 // Distributed under MIT license
@@ -80,40 +80,41 @@
   };
 
   $.fn.placeholder = function(options) {
-    var input = $(this);
-    input.data("placeholder", $.extend({ tags: ['img', 'ul'] }, options));
+    this.each(function() {
+      var input = $(this);
+      input.data("placeholder", $.extend({ tags: ['img', 'ul'] }, options));
+      var placeholder = buildPlaceholder(input);
 
-    var placeholder = buildPlaceholder(input);
-
-    placeholder.on("click", function() {
-      input.focus();
-    });
-
-    input.on("focus change blur keyup keydown", function() {
-      checkPlaceholder(input, placeholder);
-    });
-
-    input.on("paste", function() {
-      setTimeout(function() {
-        checkPlaceholder(input, placeholder);
-      }, 100);
-    });
-
-    if (input.attr('contenteditable')) {
-      input.on("change keydown keypress input", function () {
-        if (input.text()) {
-          input.attr('placeholder-content', '');
-        } else {
-          input.removeAttr('placeholder-content');
-        }
+      placeholder.on("click", function() {
+        input.focus();
       });
 
-      if (input.text()) {
-        input.attr('placeholder-content', '');
-      }
-    }
+      input.on("focus change blur keyup keydown", function() {
+        checkPlaceholder(input, placeholder);
+      });
 
-    checkPlaceholder(input, placeholder);
+      input.on("paste", function() {
+        setTimeout(function() {
+          checkPlaceholder(input, placeholder);
+        }, 100);
+      });
+
+      if (input.attr('contenteditable')) {
+        input.on("change keydown keypress input", function () {
+          if (input.text()) {
+            input.attr('placeholder-content', '');
+          } else {
+            input.removeAttr('placeholder-content');
+          }
+        });
+
+        if (input.text()) {
+          input.attr('placeholder-content', '');
+        }
+      }
+
+      checkPlaceholder(input, placeholder);
+    });
   };
 
 }));

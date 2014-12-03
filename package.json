@@ -1,7 +1,7 @@
 {
   "name": "jquery.placeholdr",
   "description": "jQuery plugin for emulating placeholder",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "mateusmaso",
   "keywords": ["jquery", "javascript", "placeholder"],
   "devDependencies": {
